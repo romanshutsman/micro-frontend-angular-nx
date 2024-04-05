@@ -10,11 +10,11 @@ const config: ModuleFederationConfig = {
    *
    * You _may_ need to add a `remotes.d.ts` file to your `src/` folder declaring the external remote for tsc, with the
    * following content:
-   *
+   * nx g @nx/angular:ngrx-root-store
    * declare module 'my-external-remote';
-   *
+   * nx g @nrwl/angular:ngrx --module=libs/shared-store/src/lib/shared-store.module.ts
    */
-  remotes: ['alarm-management', 'production-survailance'],
+  remotes: ['alarm-management', 'production-survailance', 'login'],
 };
 
 export default config;

@@ -15,9 +15,12 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@micro-frontend-angular-nx/auth": ["shared/auth/src/index.ts"],
+      "@micro-frontend-angular-nx/store": ["libs/store/src/index.ts"],
       "alarm-management/Routes": [
         "remotes/alarm-management/src/app/remote-entry/entry.routes.ts"
       ],
+      "login/Routes": ["remotes/login/src/app/remote-entry/entry.routes.ts"],
       "production-survailance/Routes": [
         "remotes/production-survailance/src/app/remote-entry/entry.routes.ts"
       ]
